@@ -1,0 +1,250 @@
+* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body { 
+    background-color: rgb(255, 255, 255);
+       display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          font-family: 'Montserrat', sans-serif;
+          height: 100vh;
+          margin: 0; 
+          overflow-x: hidden; 
+  }
+  .header{
+    width: 100%;
+    background-color: #a0dfd1;
+    height: 60px;
+    text-align: center;
+    margin-top: -10%;
+  }
+  
+  .logo{
+   padding: 12px;
+   width: 100px;
+  }
+  .etapa1 {
+    height: 236px;
+    width: 538px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 12px;
+    margin: 22px 0 ;
+    position: relative;
+    margin-top: 55%;
+    margin-left: -.5rem;
+    display: inline-block;
+  }
+  .etapa1::before {
+      content: "1";
+      position: absolute;
+      top: -7%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px; 
+      height: 40px; 
+      border-radius: 50%;
+      background-color: black;
+      border: 2px solid black; 
+      color: white;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+  
+      .nombre{
+        width: 100%;
+        height: 40px;
+        position: relative;
+        margin-left: 12%;
+       margin-top: 12%;
+        }
+        .nombre input{
+        width: 70%;
+        height: 100%;
+        outline: none;
+        border: none;
+       border-bottom: 2px solid silver;
+       font-size: 16px;
+       
+        }
+        .nombre label{
+          position: absolute;
+          left: 0;
+          bottom: 10px;
+          color: silver;
+          font-size: 16px;
+           pointer-events: none;
+           transition: all 0.3s ease;
+           
+           
+        }
+        .nombre input:focus ~label,
+    .nombre input:valid ~label {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #5ca5e0;
+    }
+    .nombre input:focus,
+    .nombre input:valid{
+    border-color: #5ca5e0;
+    }
+  
+  
+    /* APELLIDO */
+  
+    .apellido{
+      width: 100%;
+      height: 40px;
+      position: relative;
+      margin-left: 12%;
+     margin-top: 4%;
+      }
+      .apellido input{
+      width: 70%;
+      height: 100%;
+      outline: none;
+      border: none;
+     border-bottom: 2px solid silver;
+     font-size: 16px;
+     
+      }
+      .apellido label{
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        color: silver;
+        font-size: 16px;
+         pointer-events: none;
+         transition: all 0.3s ease;
+         
+         
+      }
+      .apellido input:focus ~label,
+  .apellido input:valid ~label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #5ca5e0;
+  }
+  .apellido input:focus,
+  .apellido input:valid{
+  border-color: #5ca5e0;
+  }
+  .etapa1 p {
+    margin-top: 10%;
+    text-align: center;
+    font-weight:bold;
+    font-size: 26px;
+  }
+  .login {
+    margin-top: -9%;
+    margin-left: 3%;
+  }
+
+  /* cedula */
+
+  .etapa2 {
+    height: 236px;
+    width: 538px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 12px;
+   
+    position: relative;
+    margin-left: 36rem;
+    margin-top: -16.3rem;
+  }
+  .etapa2::before {
+      content: "2";
+      position: absolute;
+      top: -7%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px; 
+      height: 40px; 
+      border-radius: 50%;
+      background-color: black;
+      border: 2px solid black; 
+      color: white;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+    
+    .etapa2 p {
+      margin-top: 10%;
+      text-align: center;
+      font-weight:bold;
+      font-size: 26px;
+    }
+
+
+    .documento{
+      width: 100%;
+      height: 40px;
+      position: relative;
+      margin-left: 12%;
+     margin-top: 4%;
+      }
+      .documento input{
+      width: 70%;
+      height: 100%;
+      outline: none;
+      border: none;
+     border-bottom: 2px solid silver;
+     font-size: 16px;
+     
+      }
+      .documento label{
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        color: silver;
+        font-size: 15px;
+         pointer-events: none;
+         transition: all 0.3s ease;
+         
+         
+      }
+      .documento input:focus ~label,
+  .documento input:valid ~label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #5ca5e0;
+  }
+  .documento input:focus,
+  .documento input:valid{
+  border-color: #5ca5e0;
+  }
+  .contenedor {
+    margin-top: -30rem;
+    margin-left: 4rem;
+  }
+
+  .ingresar {
+    width: 20%;
+    margin-top: 3rem;
+    margin-left: 27.5rem;
+    margin-bottom: 6rem;
+    border-radius: 10px;
+  border: 1px solid #5ca5e0;
+  background-color: #5ca5e0;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+    cursor: pointer;
+    height: 11%;
+  }
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5rem;
+
+  }

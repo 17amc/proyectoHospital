@@ -1,0 +1,509 @@
+body { 
+  background-color: rgb(255, 255, 255);
+     display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        height: 100vh;
+        margin: 0;  
+}
+
+
+.header{
+  width: 100%;
+  background-color: #a0dfd1;
+  height: 200px;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.logo{
+ padding: 12px;
+ width: 100px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.etapa1 {
+  height: 236px;
+  width: 538px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 12px;
+margin-top: 5rem;
+  position: relative;
+  margin-left: -.5rem;
+  
+  display: inline-block;
+}
+.etapa1::before {
+    content: "1";
+    position: absolute;
+    top: -7%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid black; 
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+    .nombre{
+      width: 100%;
+      height: 40px;
+      position: relative;
+      margin-left: 12%;
+     margin-top: 12%;
+      }
+      .nombre input{
+      width: 70%;
+      height: 100%;
+      outline: none;
+      border: none;
+     border-bottom: 2px solid silver;
+     font-size: 16px;
+     
+      }
+      .nombre label{
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        color: silver;
+        font-size: 16px;
+         pointer-events: none;
+         transition: all 0.3s ease;
+         
+         
+      }
+      .nombre input:focus ~label,
+  .nombre input:valid ~label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #5ca5e0;
+  }
+  .nombre input:focus,
+  .nombre input:valid{
+  border-color: #5ca5e0;
+  }
+
+
+  /* APELLIDO */
+
+  .apellido{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-left: 12%;
+   margin-top: 4%;
+    }
+    .apellido input{
+    width: 70%;
+    height: 100%;
+    outline: none;
+    border: none;
+   border-bottom: 2px solid silver;
+   font-size: 16px;
+   
+    }
+    .apellido label{
+      position: absolute;
+      left: 0;
+      bottom: 10px;
+      color: silver;
+      font-size: 16px;
+       pointer-events: none;
+       transition: all 0.3s ease;
+       
+       
+    }
+    .apellido input:focus ~label,
+.apellido input:valid ~label {
+transform: translateY(-20px);
+font-size: 14px;
+color: #5ca5e0;
+}
+.apellido input:focus,
+.apellido input:valid{
+border-color: #5ca5e0;
+}
+.etapa1 p {
+  margin-top: 10%;
+  text-align: center;
+  font-weight:bold;
+  font-size: 26px;
+}
+.login {
+  margin-top: -9%;
+  margin-left: 3%;
+}
+
+/* ETAPA 2  */
+  
+  .etapa2 {
+    height: 236px;
+    width: 538px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 12px;
+   
+    position: relative;
+    margin-left: 36rem;
+    margin-top: -15rem;
+  }
+  .etapa2::before {
+      content: "2";
+      position: absolute;
+      top: -7%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px; 
+      height: 40px; 
+      border-radius: 50%;
+      background-color: black;
+      border: 2px solid black; 
+      color: white;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+    
+    .etapa2 p {
+      margin-top: 10%;
+      text-align: center;
+      font-weight:bold;
+      font-size: 26px;
+    }
+
+
+    .documento{
+      width: 100%;
+      height: 40px;
+      position: relative;
+      margin-left: 12%;
+     margin-top: 4%;
+      }
+      .documento input{
+      width: 70%;
+      height: 100%;
+      outline: none;
+      border: none;
+     border-bottom: 2px solid silver;
+     font-size: 16px;
+     
+      }
+      .documento label{
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        color: silver;
+        font-size: 15px;
+         pointer-events: none;
+         transition: all 0.3s ease;
+         
+         
+      }
+      .documento input:focus ~label,
+  .documento input:valid ~label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #5ca5e0;
+  }
+  .documento input:focus,
+  .documento input:valid{
+  border-color: #5ca5e0;
+  }
+  
+  /* ETAPA3 */
+
+    
+  .etapa3 {
+    height: 236px;
+    width: 538px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 12px;
+    margin-top: 5%;
+margin-left: -.5rem;
+    position: relative;
+    
+  }
+
+  .etapa3 p {
+    margin-top: 10%;
+    text-align: center;
+    font-weight:bold;
+    font-size: 26px;
+  }
+
+  .etapa3::before {
+      content: "3";
+      position: absolute;
+      top: -7%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px; 
+      height: 40px;
+      border-radius: 50%;
+      background-color: black;
+      border: 2px solid black; 
+      color: white;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+
+    }
+
+    .years {
+      border-bottom: 2px solid silver;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      margin-top: 2%;
+      margin-left: 42%;
+      width: 60px;
+      font-size: 27px;
+      text-indent: 15px;
+      padding-bottom: 4px;
+      font-weight: bold;
+      transform: scale(1.6);
+      
+      
+    }
+    .years:focus {
+      outline: none;
+    }
+    .years:focus,
+  .years:valid{
+  border-color: #5ca5e0;
+  }
+    .años {
+      font-size: 17.5px;
+      font-weight: bold;
+      color: rgba(102, 101, 101, 0.712);
+      margin-left: 3%;
+    }
+/* ETAPA4 */
+.etapa4 {
+  height: 236px;
+  width: 538px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 12px;
+  margin-top: -14.8rem;
+  margin-left: 36rem;
+  position: relative;
+}
+.etapa4::before {
+    content: "4";
+    position: absolute;
+    top: -7%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid black; 
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .imagen-container {
+    display: flex;
+    margin-top: -3%;
+    margin-left: 24%;
+  }
+  
+  .hombre img {
+    width: 100px;
+   
+  }
+  .mujer img{
+    width: 92px;
+    margin-top: 4%;
+    margin-left: 100%;
+  }
+  .hombre input {
+    display: block;
+    margin-top: 2%;
+    margin-left: 45%;
+    transform: scale(1.5);
+    position: relative;
+
+  }
+.mujer input {
+  display: block;
+  margin-top: 5%;
+  margin-left: 144%;
+  transform: scale(1.5);
+   /* Espacio entre la imagen y el input */
+}
+
+.etapa4 p {
+  margin-top: 10%;
+  text-align: center;
+  font-weight:bold;
+  font-size: 26px;
+}
+  
+  /* ETAPA5 */
+
+  .etapa5 {
+    height: 236px;
+    width: 538px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 12px;
+    margin-left: 17.5rem;
+    margin-top: 4rem;
+    position: relative;
+  }
+  .etapa5::before {
+      content: "5";
+      position: absolute;
+      top: -7%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px; 
+      height: 40px; 
+      border-radius: 50%;
+      background-color: black;
+      border: 2px solid black; 
+      color: white;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    
+
+    .input-correo{
+      width: 100%;
+      height: 40px;
+      position: relative;
+      margin-left: 12%;
+     margin-top: 12%;
+      }
+      .input-correo input{
+      width: 70%;
+      height: 100%;
+      outline: none;
+      border: none;
+     border-bottom: 2px solid silver;
+     font-size: 16px;
+     
+      }
+      .input-correo label{
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        color: silver;
+        font-size: 16px;
+         pointer-events: none;
+         transition: all 0.3s ease;
+      }
+      .input-correo input:focus ~label,
+  .input-correo input:valid ~label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #5ca5e0;
+  }
+  .input-correo input:focus,
+  .input-correo input:valid{
+  border-color: #5ca5e0;
+  }
+
+  /* CONTRASEÑA */
+
+  .input-contraseña{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-left: 12%;
+   margin-top: 5%;
+    }
+    .input-contraseña input{
+    width: 70%;
+    height: 100%;
+    outline: none;
+    border: none;
+   border-bottom: 2px solid silver;
+   font-size: 16px;
+   
+    }
+    .input-contraseña label{
+      position: absolute;
+      left: 0;
+      bottom: 10px;
+      color: silver;
+      font-size: 16px;
+       pointer-events: none;
+       transition: all 0.3s ease;
+       
+       
+    }
+    .input-contraseña input:focus ~label,
+.input-contraseña input:valid ~label {
+transform: translateY(-20px);
+font-size: 14px;
+color: #5ca5e0;
+}
+.input-contraseña input:focus,
+.input-contraseña input:valid{
+border-color: #5ca5e0;
+}
+
+.corcontra {
+  margin-top: -11%;
+  margin-left: 3%;
+}
+.etapa5 p {
+  margin-top: 10%;
+  text-align: center;
+  font-weight:bold;
+  font-size: 26px;
+}
+
+.campo {
+  -webkit-box-shadow: 0 0 0 1000px white inset; 
+}
+.ingresar {
+  width: 25%;
+  margin-top: 3rem;
+  margin-left: 26rem;
+  margin-bottom: 6rem;
+  border-radius: 10px;
+border: 1px solid #5ca5e0;
+background-color: #5ca5e0;
+color: #FFFFFF;
+font-size: 12px;
+font-weight: bold;
+padding: 12px 45px;
+letter-spacing: 1px;
+text-transform: uppercase;
+transition: transform 80ms ease-in;
+  cursor: pointer;
+  height: 3%;
+}
